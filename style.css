@@ -1,5 +1,13 @@
 .Damas {
     position: absolute;
     left: 10%;
-    color:orange;
+    color: orange;
+}
+
+#chicken {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    width: 20%;
+    height: auto;
 }
