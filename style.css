@@ -11,3 +11,9 @@
     width: 20%;
     height: auto;
 }
+
+#connection {
+    position: absolute;
+    right: 5%;
+    font-size: 22px;
+}
