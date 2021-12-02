@@ -27,8 +27,29 @@
     padding: 3px;
 }
 
+#preElFormulaire {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: rgb(168, 156, 236);
+    width: 30%;
+}
+
 #elFormulaire {
     position: relative;
     padding-top: 2%;
     left: 15%;
+}
+
+#elFormulaireSubmit {
+    margin-left: 40%;
+    margin-top: 7%;
+}
+
+#elFormulaireLogo {
+    margin-left: 5%;
+    margin-top: -3%;
+    padding-bottom: 5%;
 }
