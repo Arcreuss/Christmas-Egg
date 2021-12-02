@@ -14,8 +14,15 @@
     <h1 class="Damas">HOP</h1>
     <img id="chicken" src="Images/chicken-gif-clipart-8.gif">
     <a id="connection" href="formLogin.html">Log in</a>
-
-
+    <?php
+    echo "<div class='containerDivs'>";
+    for ($i = 1; $i <= 30; $i++) {
+        for ($j = 1; $j <= 28; $j++) {
+            echo "<div class='span'></div>";
+        }
+    }
+    echo "</div>";
+    ?>
 </body>
 
 </html>

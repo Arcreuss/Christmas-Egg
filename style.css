@@ -53,3 +53,21 @@
     margin-top: -3%;
     padding-bottom: 5%;
 }
+
+.containerDivs {
+    position: absolute;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 500px;
+    margin-left: 25vw;
+    margin-top: 25vh;
+}
+
+.span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
