@@ -15,7 +15,7 @@ $_SESSION["user"] = "";?>
     <a id="goBackHome" href=".">Home</a>
     <div id="preElFormulaire">
         <!-- <img id="elFormulaireLogo" src="./Images/banner_site_nuit_info.png" width="175px" height="auto"> -->
-        <form id="elFormulaire" action="" method="post">
+        <form id="elFormulaire"  method="post">
             <label for="fname">Username:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Password:</label>
@@ -32,8 +32,16 @@ $_SESSION["user"] = "";?>
                 ?><a id="downloadlink" href="NuitDeL'infoEasterEg(GoogleCollab).ipynb" download="Enigme.ipynb">Next Step</a><?php
             }elseif( isset($_POST["fname"]) && $_POST["fname"] == "Hollywood" && $pswd == "debug"){
                 // echo "hop";
-                header('Location : index.php');
+            //    Redirect('congrats.php', false);
+               header('Location: congrats.php');
+                // header('Location: D:\WAMP\www\NuitDeLinfo\in\congrats.php');
             }
+
+
+            // function Redirect($url, $permanent = false) {
+            //     header('Location: congrats.php');
+            //     exit();
+            //     }
         ?>
     </div>
 

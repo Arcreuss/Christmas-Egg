@@ -12,7 +12,6 @@
 
 <body>
 
-
     <h1 class="Damas">HOP</h1>
     <a id="connection" href="formLogin.php">Log in</a>
     <?php
