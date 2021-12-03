@@ -1,15 +1,7 @@
-.Damas {
+.Luc {
     position: absolute;
     left: 10%;
     color: orange;
-}
-
-#chicken {
-    position: absolute;
-    right: 0%;
-    top: 10%;
-    width: 20%;
-    height: auto;
 }
 
 #connection {
@@ -78,4 +70,10 @@
 
 .spanm {
     background-color: red;
+    background-color: blue;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1%;
 }

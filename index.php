@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <h1 class="Damas">HOP</h1>
-    <a id="connection" href="formLogin.html">Log in</a>
+    <h1 class="Luc">HOP</h1>
+    <a id="connection" href="formLogin.html">Sign in</a>
     <?php
     echo "<div class='containerDivs'>";
     for ($i = 1; $i <= 30; $i++) {
@@ -27,5 +27,7 @@
     echo "</div>";
     ?>
 </body>
+
+<footer class="footer">By Bocquet Thomas - Perrod Ethan - Picaud Nicolas  as part of the CAPCOD challenge 2021</footer>
 
 </html>
