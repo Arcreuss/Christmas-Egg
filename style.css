@@ -8,7 +8,6 @@
     color: orange;
 }
 
-
 #chicken {
     position: absolute;
     right: 0%;
@@ -106,4 +105,21 @@ input {
     margin-left: 60vw;
     margin-top: 20vh;
     z-index: 9999;
+}
+
+.balloon {
+    position: absolute;
+    top: -15%;
+    width: 100px;
+    height: 100px;
+}
+
+.easter {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    left: 25%;
+    top: 15%;
+    font-size: 26px;
+    color: orange;
 }
