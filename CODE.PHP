@@ -1,0 +1,1 @@
+Xkjfkqn, ha lnkydwej ejzeya aop 5.68877t^3 −59.161t^2

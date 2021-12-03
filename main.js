@@ -6,7 +6,9 @@ window.addEventListener("load", function(event) {
             if (compteur < 5) {
                 compteur += 1;
             } else {
-                element.id = "Xkjfkqn, ha lnkydwej ejzeya aop 5.68877t^3 −59.161t^2"
+                fetch("CODE.PHP")
+                    .then(res => res.text())
+                    .then((result) => { element.id = result });
             }
         })
     });
