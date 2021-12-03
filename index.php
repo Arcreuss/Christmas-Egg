@@ -14,7 +14,7 @@
 
 
     <h1 class="Damas">HOP</h1>
-    <a id="connection" href="formLogin.html">Log in</a>
+    <a id="connection" href="formLogin.php">Log in</a>
     <?php
     echo "<div class='containerDivs'>";
     for ($i = 1; $i <= 30; $i++) {
