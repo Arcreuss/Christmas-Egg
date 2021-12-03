@@ -1,14 +1,14 @@
 window.addEventListener("load", function(event) {
     initBalloons();
-    let pos = 0
+    let pos = 500
     let balloons = document.querySelectorAll(".balloon")
     setInterval(function() {
         balloons.forEach(balloon => {
             balloon.style.marginBottom = pos + "px"
             document.body.appendChild(balloon);
         });
-        ++pos
-        if (pos == 500)
+        --pos
+        if (pos == 0)
             createLastDiv();
     }, 10)
 
