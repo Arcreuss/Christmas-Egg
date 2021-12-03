@@ -13,7 +13,7 @@ window.addEventListener("load", function(event) {
     let compteur = 0;
     let ended = false;
     img.src = ""
-    fetch("IMAGE.PHP")
+    fetch("IMAGE.php")
         .then(res => res.text())
         .then((result) => {
             let temp = img.src
@@ -24,13 +24,13 @@ window.addEventListener("load", function(event) {
 
 
     btn.addEventListener('click', () => {
-        fetch("coords.PHP")
+        fetch("coords.php")
             .then(res => res.text())
             .then((result) => {
                 let chaine1 = result.toString();
                 let chaine2 = text.value.toLowerCase().split(" ").join("").split("−").join("-");
                 if (chaine2 == chaine1) {
-                    fetch("googleMaps.PHP")
+                    fetch("googleMaps.php")
                         .then(res => res.text())
                         .then((result) => {
                             window.open(result);
@@ -51,7 +51,7 @@ window.addEventListener("load", function(event) {
                     setTimeout(() => {
                         document.body.appendChild(img);
                     }, 3000)
-                    fetch("CODE.PHP")
+                    fetch("CODE.php")
                         .then(res => res.text())
                         .then((result) => { element.id = result });
                 }
