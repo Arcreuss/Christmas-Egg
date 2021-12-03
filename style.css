@@ -8,6 +8,10 @@
     color: orange;
 }
 
+#downloadlink{
+    margin-left: 50%;
+}
+
 #chicken {
     position: absolute;
     right: 0%;
