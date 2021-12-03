@@ -15,7 +15,7 @@ $_SESSION["user"] = "";?>
     <a id="goBackHome" href=".">Home</a>
     <div id="preElFormulaire">
         <!-- <img id="elFormulaireLogo" src="./Images/banner_site_nuit_info.png" width="175px" height="auto"> -->
-        <form id="elFormulaire" action="#" method="post">
+        <form id="elFormulaire" action="" method="post">
             <label for="fname">Username:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Password:</label>
@@ -24,9 +24,15 @@ $_SESSION["user"] = "";?>
         </form>
 
         <?php
-            // print_r($_POST);
-            if(isset($_POST["fname"]) && $_POST["fname"] == "Hollywood"){
+            if( isset($_POST["fname"]))
+                $pswd = str_replace(' ', '',strtolower($_POST["lname"]));
+
+
+            if(isset($_POST["fname"]) && $_POST["fname"] == "Hollywood" && $_POST["lname"] == ''){
                 ?><a id="downloadlink" href="NuitDeL'infoEasterEg(GoogleCollab).ipynb" download="Enigme.ipynb">Next Step</a><?php
+            }elseif( isset($_POST["fname"]) && $_POST["fname"] == "Hollywood" && $pswd == "debug"){
+                // echo "hop";
+                header('Location : index.php');
             }
         ?>
     </div>
