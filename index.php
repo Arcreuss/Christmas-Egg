@@ -12,7 +12,6 @@
 
 <body>
     <h1 class="Damas">HOP</h1>
-    <img id="chicken" src="Images/chicken-gif-clipart-8.gif">
     <a id="connection" href="formLogin.html">Log in</a>
     <?php
     echo "<div class='containerDivs'>";
