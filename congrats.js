@@ -4,13 +4,14 @@ window.addEventListener("load", function(event) {
     let balloons = document.querySelectorAll(".balloon")
     setInterval(function() {
         balloons.forEach(balloon => {
-            balloon.style.marginTop = pos + "px"
+            balloon.style.marginBottom = pos + "px"
             document.body.appendChild(balloon);
         });
         --pos
         if (pos == 0)
             createLastDiv();
     }, 10)
+
 })
 
 function initBalloons() {
@@ -23,7 +24,7 @@ function initBalloons() {
         image.style.height = "auto"
 
         balloon.style.left = `${getRandom(-300, 920)}px`
-        balloon.style.top = `${getRandom(0, -350)}px`
+        balloon.style.bottom = `${getRandom(0, 250)}px`
 
         balloon.addEventListener("mouseover", function() {
             // balloon.style.display = "none"
@@ -39,6 +40,12 @@ function createLastDiv() {
     easter.classList.add("easter")
     easter.innerHTML = "Thank you for playing our game"
     document.body.appendChild(easter)
+
+    let egg = document.createElement("img")
+    egg.src = "./Images/egg.jpg"
+    egg.classList.add("egg");
+    document.body.appendChild(egg);
+
 }
 
 function getRandom(min, max) {
