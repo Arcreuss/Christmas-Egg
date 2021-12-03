@@ -7,6 +7,8 @@ window.addEventListener("load", function(event) {
     text.classList.add("inputText")
     btn.type = 'submit';
     btn.value = 'Vérifier';
+    btn.classList.add("buttun")
+
 
     let compteur = 0;
     let ended = false;

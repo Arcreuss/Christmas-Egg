@@ -73,7 +73,7 @@
 }
 
 .span {
-    background-color: red;
+    background-color: blue;
 }
 
 .span,
@@ -84,7 +84,7 @@
 }
 
 .spanm {
-    background-color: red;
+    background-color: blue;
 }
 
 img {
@@ -123,4 +123,10 @@ input {
     top: 15%;
     font-size: 26px;
     color: orange;
+}
+
+.buttun {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 160px;
 }
