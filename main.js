@@ -22,7 +22,17 @@ window.addEventListener("load", function(event) {
 
 
     btn.addEventListener('click', () => {
-        console.log(text.value);
+        fetch("coords.PHP")
+            .then(res => res.text())
+            .then((result) => {
+                console.log(typeof result.toString() + "==" + typeof text.value.toString());
+                console.log(result.toString() + "==" + text.value.toString());
+                if (text.value.toString() === result.toString()) {
+                    console.log("Yes");
+                } else {
+                    console.log("NO");
+                }
+            });
     })
 
     spans.forEach(element => {
